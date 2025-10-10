@@ -1,66 +1,46 @@
-# 💳 Power BI Credit Card Financial Dashboard Project  
+# 💳 Credit Card Financial Dashboard — Power BI Project  
 
 ## 📘 Overview  
-This project demonstrates an **end-to-end Power BI dashboard development process** for analyzing credit card financial data.  
-It covers everything from **data extraction using SQL**, **data cleaning and modeling**, to **building interactive dashboards** using **Power BI** and **DAX**.  
+This project showcases a **complete end-to-end Power BI dashboard** for analyzing **credit card financial transactions**.  
+It demonstrates data integration, transformation, modeling, DAX measures, and dashboard design — providing valuable business insights from transactional data.  
 
-The project aims to provide clear insights into credit card transactions, spending behavior, and trends — helping businesses make data-driven financial decisions.  
-
-🎥 **Reference Video:** [POWER BI Full Project for Data Analysis (YouTube)](https://www.youtube.com/watch?v=8XoDVwWdaqI)  
+🔗 **Live Project Reference:** [YouTube - Power BI Full Project for Data Analysis](https://www.youtube.com/watch?v=8XoDVwWdaqI)  
+📊 **Dataset Source:** [Credit Card Financial Dashboard Dataset (Kaggle)](https://www.kaggle.com/datasets/nibeditasahu/credit-card-financial-dashboard-using-power-bi)
 
 ---
 
 ## 🎯 Objectives  
-- Build an interactive dashboard to visualize and analyze credit card financial data.  
-- Implement a complete workflow including **data connection, transformation, DAX calculation**, and **dashboard design**.  
-- Demonstrate key **Power BI** and **SQL** skills relevant for real-world data analytics.  
-
----
-
-## 🧠 Key Insights from Dashboard  
-- Identify total and category-wise spending patterns.  
-- Track monthly or quarterly growth in transactions.  
-- Monitor top customers and high-value purchases.  
-- Discover trends in customer behavior and spending categories.  
+- Build a dynamic dashboard to visualize credit card transaction data.  
+- Implement a complete data analytics pipeline (SQL → Power BI → Insights).  
+- Use DAX calculations for KPIs and performance tracking.  
+- Provide business-ready insights for decision making.  
 
 ---
 
 ## 🧭 Project Workflow  
 
-### 1. **Data Connection**
-- Connected Power BI to a SQL database containing credit card transaction data.  
-- Imported multiple related tables (customers, transactions, categories).  
+### 1. **Data Source & Connection**
+- Imported datasets (Credit Card, Customer, Category) from SQL / CSV files.  
+- Connected Power BI to a relational database backend.  
 
-### 2. **Data Transformation**
-- Cleaned and filtered data using **Power Query Editor**.  
-- Removed null values, renamed columns, and standardized formats.  
+### 2. **Data Cleaning & Transformation**
+- Used **Power Query Editor** for filtering, merging, renaming, and formatting data.  
+- Removed missing values and standardized column data types.  
 
 ### 3. **Data Modeling**
-- Established **relationships** between tables (fact and dimension).  
-- Built a star schema for efficient analytics.  
+- Created relationships between fact (transactions) and dimension (customer, category) tables.  
+- Built a **star schema** for efficient analytics.  
 
-### 4. **DAX Calculations**
-Created calculated columns and measures for:  
-- `Total Spend`  
-- `Average Transaction Value`  
-- `Monthly/Quarterly Growth`  
-- `Top Customers`  
+### 4. **DAX Measures**
+Defined key metrics such as:  
+- `Total Revenue = SUM(Transaction[Revenue])`  
+- `Average Transaction Value = DIVIDE([Total Revenue], [Transaction Count])`  
+- `Monthly Growth = (ThisMonth - LastMonth) / LastMonth`  
 
 ### 5. **Dashboard Design**
-- Designed interactive visuals (bar chart, donut chart, line chart, matrix).  
-- Used slicers for filtering by time period, card type, or customer.  
-- Added KPIs and formatted using a clean, modern theme.  
-
----
-
-## 🧰 Tools & Technologies  
-
-| Tool / Language | Purpose |
-|-----------------|----------|
-| **Power BI Desktop** | Data modeling, visualization, and dashboard design |
-| **SQL Database** | Data source for transaction and customer tables |
-| **DAX (Data Analysis Expressions)** | Measures and calculated fields |
-| **Power Query (M language)** | Data cleaning and transformation |
+- Added charts: bar, donut, line, KPI cards, and matrix visuals.  
+- Used slicers for filtering by customer, time, and category.  
+- Applied consistent color palette and layout for professional look.  
 
 ---
 
@@ -69,14 +49,31 @@ Created calculated columns and measures for:
 | Metric | Description |
 |--------|-------------|
 | 💰 **Total Revenue** | Total revenue generated from all credit card transactions |
-| 💳 **Total Transaction Amount** | Sum of all credit card transaction values |
-| 🧾 **Transaction Count** | Number of transactions made by all customers |
-| 📈 **Interest Earned** | Total interest collected from customer transactions |
-| 👥 **Customer Count** | Total number of active credit card customers |
+| 💳 **Total Transaction Amount** | Sum of all transaction values |
+| 🧾 **Transaction Count** | Total number of transactions made |
+| 📈 **Interest Earned** | Total interest collected from transactions |
+| 👥 **Customer Count** | Number of active credit card customers |
 | 📊 **Quarterly/Monthly Trends** | Tracks revenue and spending growth over time |
-| 💎 **Card Category Insights** | Breakdown of spending and revenue by card type (Gold, Silver, Platinum, etc.) |
+| 💎 **Card Category Insights** | Breakdown of revenue and spend by card type (Gold, Silver, Platinum, etc.) |
 | 🧔‍♂️ **Demographic Insights** | Spend and revenue distribution by gender, age group, and income level |
 
+### 📈 Key Insights Summary
+- Platinum and Gold cards generate the highest revenue share.  
+- Younger customers (25–35 age group) show higher transaction frequency.  
+- Revenue has shown consistent growth quarter-over-quarter.  
+- Interest income forms a significant portion of overall revenue.  
+- High-income customers prefer premium card categories.  
+
+---
+
+## 🧰 Tools & Technologies  
+
+| Tool / Technology | Purpose |
+|-------------------|----------|
+| **Power BI Desktop** | Data visualization and dashboard development |
+| **SQL Database** | Data storage and connection |
+| **DAX (Data Analysis Expressions)** | Measure calculations |
+| **Power Query (M)** | Data cleaning and ETL process |
 
 ---
 
