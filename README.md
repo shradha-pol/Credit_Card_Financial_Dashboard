@@ -92,4 +92,4 @@ Defined key metrics such as:
 ## 📝 Credits  
 - Inspired by: [Power BI Full Project for Data Analysis (YouTube)](https://www.youtube.com/watch?v=8XoDVwWdaqI)  
 - Dataset: [Credit Card Financial Dashboard - Kaggle](https://www.kaggle.com/datasets/nibeditasahu/credit-card-financial-dashboard-using-power-bi)  
-- Developed by: [Shradha Pol](https://www.linkedin.com/in/shradha-pol-440949280/)  
+- Developed by: [Shradha Pol](https://www.linkedin.com/in/shradha-polofficial)  
