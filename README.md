@@ -64,14 +64,19 @@ Created calculated columns and measures for:
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)  
+## 📊 Key KPIs & Insights  
 
-- Total Revenue / Total Spend  
-- Number of Transactions  
-- Average Spend per Customer  
-- Monthly Spend Growth  
-- Category-wise Spending  
-- Top 5 Customers  
+| Metric | Description |
+|--------|-------------|
+| 💰 **Total Revenue** | Total revenue generated from all credit card transactions |
+| 💳 **Total Transaction Amount** | Sum of all credit card transaction values |
+| 🧾 **Transaction Count** | Number of transactions made by all customers |
+| 📈 **Interest Earned** | Total interest collected from customer transactions |
+| 👥 **Customer Count** | Total number of active credit card customers |
+| 📊 **Quarterly/Monthly Trends** | Tracks revenue and spending growth over time |
+| 💎 **Card Category Insights** | Breakdown of spending and revenue by card type (Gold, Silver, Platinum, etc.) |
+| 🧔‍♂️ **Demographic Insights** | Spend and revenue distribution by gender, age group, and income level |
+
 
 ---
 
