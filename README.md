@@ -80,9 +80,16 @@ Defined key metrics such as:
 ## 🖼️ Dashboard Preview  
 
 ### 🧾 Customer Dashboard  
+> Visualizes customer-level metrics such as total spend, active customers, and spending distribution by category.
 ![Customer Dashboard](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Customer_Snapshot.jpg)
 
-### 💰 Transaction Dashboard  
+### 💰 Transaction Dashboard 
+> Displays transactional insights such as total revenue, transaction count, and monthly trends for performance tracking.
 ![Transaction Dashboard](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Transaction_Snapshot.jpg)
   
+---
 
+## 📝 Credits  
+- Inspired by: [Power BI Full Project for Data Analysis (YouTube)](https://www.youtube.com/watch?v=8XoDVwWdaqI)  
+- Dataset: [Credit Card Financial Dashboard - Kaggle](https://www.kaggle.com/datasets/nibeditasahu/credit-card-financial-dashboard-using-power-bi)  
+- Developed by: [Shradha Pol](https://www.linkedin.com/in/shradha-pol-440949280/)  
