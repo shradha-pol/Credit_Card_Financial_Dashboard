@@ -75,5 +75,12 @@ Created calculated columns and measures for:
 
 ---
 
+## 🖼️ Dashboard Preview  
+
+### 🧾 Customer Dashboard  
+![Customer Dashboard](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Customer_Snapshot.jpg)
+
+### 💰 Transaction Dashboard  
+![Transaction Dashboard](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Transaction_Snapshot.jpg)
   
 
