@@ -1,103 +1,135 @@
-# 💳 Credit Card Financial Dashboard  
+# 💳 Credit Card Financial Dashboard — Power BI Project  
 
-### 📊 Project Overview  
-This project analyzes **credit card transaction and customer data** to uncover key financial insights such as spending patterns, revenue performance, and customer segmentation.  
-The final deliverable is an **interactive Power BI dashboard** that provides a 360° view of business performance for decision-makers in the financial domain.  
+## 📘 Overview  
+This project showcases a **complete end-to-end Power BI dashboard** for analyzing **credit card financial transactions**.  
+It demonstrates data integration, transformation, modeling, DAX measures, and dashboard design — providing valuable business insights from transactional data.  
 
----
-
-### 🧠 Objective  
-To design and develop a **comprehensive Power BI dashboard** that helps visualize and track:  
-- Total and category-wise revenue  
-- Customer demographics and spending habits  
-- Monthly and yearly growth trends  
-- High-value customers and active card usage  
+🔗 **Live Project Reference:** [YouTube - Power BI Full Project for Data Analysis](https://www.youtube.com/watch?v=8XoDVwWdaqI)  
+📊 **Dataset Source:** [Credit Card Financial Dashboard Dataset (Kaggle)](https://www.kaggle.com/datasets/nibeditasahu/credit-card-financial-dashboard-using-power-bi)
 
 ---
 
-### 🧰 Tools & Technologies Used  
-
-| **Category** | **Tools / Technologies** |
-|:-------------:|:-------------------------|
-| Data Cleaning & Preparation | SQL, Power Query |
-| Data Analysis | DAX, Power BI |
-| Visualization | Power BI |
-| File Format | CSV |
-| Report Export | PDF |
+## 🎯 Objectives  
+- Build a dynamic dashboard to visualize credit card transaction data.  
+- Implement a complete data analytics pipeline (SQL → Power BI → Insights).  
+- Use DAX calculations for KPIs and performance tracking.  
+- Provide business-ready insights for decision making.  
 
 ---
 
-### 🗂️ Dataset Description  
+## 🗂️ Dataset Details  
+| **Dataset/Table** | **Description** | 
+|------------------|-----------------|-------------------|
+| `Customer` | Customer demographics (age, gender, income group, marital status) | 
+| `Cust_Address` | Customer location (city, state, country) | 
+| `Credit_Card` | Card type, limits, status, category | 
+| `Transaction` | Transaction ID, amount, payment mode, date | 
 
-**Source:** Synthetic dataset (created for educational & analytical purposes).  
-
-**Tables Used:**  
-
-| **Table Name** | **Description** |
-|:---------------|:----------------|
-| `Customer.csv` | Contains customer demographic details like age, gender, income group, and marital status. |
-| `Cust_Address.csv` | Includes city, state, and country details for each customer. |
-| `Credit_Card.csv` | Provides credit card details and spending categories. |
-| `Transaction.csv` | Contains transaction IDs, amounts, payment methods, and transaction dates. |
-
-Each table was connected using **Customer ID** as a key field to build a **Star Schema** data model.
-
----
-
-### 🔄 Data Preparation Workflow  
-
-1. **Data Connection:** Imported all four CSV files into Power BI via SQL Database.  
-2. **Data Cleaning:** Removed duplicates, handled missing values, and standardized field names.  
-3. **Data Transformation:** Merged datasets and created relationships between tables.  
-4. **Data Modeling:** Defined calculated measures using DAX (e.g., total revenue, spend per customer, active card users).  
-5. **Dashboard Creation:** Designed interactive visuals for revenue trends, customer overview, and transaction insights.  
-
----
-
-### 📈 Key KPIs & Metrics  
-
-- **Total Revenue**  
-- **Average Transaction Value**  
-- **Year-to-Date Revenue Growth (%)**  
-- **Active Customers Count**  
-- **Revenue by Category / State / Month**  
-
----
-
-### 🖼️ Dashboard Preview  
-
-| **Dashboard Section** | **Preview Image** |
-|:----------------------:|:-----------------:|
-| Customer Insights | ![Customer Insights](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Customer_Snapshot.jpg) |
-| Transaction Analysis | ![Transaction Analysis](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Transaction_Snapshot.jpg)
-  
- |
 
 
 ---
 
-### 💡 Insights & Findings  
+## 🧭 Workflow  
 
-- **Top 10% of customers** contribute to nearly **45% of the total revenue.**  
-- **Online transactions** show a steady **month-on-month increase of 12–15%.**  
-- **Dining, travel, and entertainment** categories drive the highest spending.  
-- **Most active customer age group:** 30–45 years with high annual income range.  
+### 1. Data Source & Connection
+- Imported datasets from SQL / CSV files.  
+- Connected Power BI to a relational database backend for query optimization.
+
+### 2. Data Cleaning & Transformation
+- Used **Power Query Editor** to filter, merge, rename, and format data.  
+- Removed missing values and standardized column types.
+
+### 3. Data Modeling
+- Created relationships between fact (`Transaction`) and dimension (`Customer`, `Category`) tables.  
+- Built a **Star Schema** for efficient analytics.  
+
+### 4. DAX Measures
+Defined key metrics such as:  
+```text
+Total Revenue = SUM(Transaction[Revenue])
+Average Transaction Value = DIVIDE([Total Revenue], [Transaction Count])
+Monthly Growth = (ThisMonth - LastMonth) / LastMonth
+
+### **5. Dashboard Design**
+- Bar charts, donut charts, line charts, KPI cards, and matrix visuals.  
+- Slicers for filtering by customer, time, and category.  
+- Consistent color palette and professional layout.
 
 ---
 
-### 🚀 Business Impact  
+## **📊 Key KPIs**  
 
-This dashboard empowers financial and business teams to:  
-
-- Identify high-value customers and target retention offers.  
-- Track revenue growth and spending patterns across demographics and categories.  
-- Optimize marketing and promotional campaigns based on customer insights.  
-- Monitor performance KPIs in near real-time for data-driven decision-making.  
+| **Category** | **Metric** | **Description** |
+|--------------|-----------|----------------|
+| 💰 **Revenue** | Total Revenue | Sum of all credit card revenue |
+| 💳 **Transactions** | Total Transaction Amount | Total transaction value |
+| 🧾 **Transactions** | Transaction Count | Number of transactions |
+| 📈 **Revenue** | Interest Earned | Total interest from transactions |
+| 👥 **Customers** | Customer Count | Active cardholders |
+| 📊 **Trends** | Quarterly/Monthly Trends | Revenue and spending growth |
+| 💎 **Card Category** | Insights by Type | Revenue breakdown by card type |
+| 🧔 **Demographics** | Customer Insights | Spend by gender, age, income |
 
 ---
 
-### ⚙️ How to Use  
+## **💡 Insights & Business Impact**  
+- **High-value customers:** Top 10% contribute ~45% of revenue → targeted retention campaigns.  
+- **Card performance:** Platinum and Gold cards drive the highest revenue.  
+- **Customer behavior:** Younger customers (25–35) transact more frequently → marketing focus.  
+- **Revenue growth:** Consistent quarter-over-quarter growth → indicates healthy card usage trends.  
+- **Interest income:** Significant portion of revenue → helps prioritize high-interest products.  
 
-1. **Clone this repository:**  
-   ```bash
-   git clone https://github.com/shradha-pol/Credit_Card_Financial_Dashboard.git
+---
+
+## **🖼️ Dashboard Preview**  
+
+### **🧾 Customer Dashboard**  
+> Visualizes customer metrics like total spend, active users, and category distribution.  
+![Customer Dashboard](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Customer_Snapshot.jpg)
+
+### **💰 Transaction Dashboard**  
+> Displays revenue, transaction counts, and trends for performance tracking.  
+![Transaction Dashboard](https://github.com/shradha-pol/Credit_Card_Financial_Dashboard/blob/main/Credit_Card_Report-Transaction_Snapshot.jpg)
+
+---
+
+## **🧩 Challenges & Solutions**  
+| **Challenge** | **Solution** |
+|---------------|--------------|
+| Inconsistent data across multiple tables | Standardized column names, removed nulls, validated relationships |
+| Dashboard performance issues | Optimized DAX calculations and created aggregated tables |
+| Complex KPI calculations | Developed step-by-step DAX measures for accuracy |
+| Visual layout clarity | Applied consistent color scheme, clear labeling, and slicers |
+
+---
+
+## **🔮 Future Enhancements**  
+- Integrate real-time data using **Power BI Service**.  
+- Add predictive analytics for **customer churn** and **fraud detection**.  
+- Automate email reports with **Power Automate**.  
+- Expand dataset for multi-bank credit card analysis.  
+
+---
+
+## **🧰 Tools & Technologies**  
+
+| **Tool / Technology** | **Purpose** |
+|-----------------------|------------|
+| Power BI Desktop | Dashboard development and visualization |
+| SQL Database | Data storage and queries |
+| DAX (Data Analysis Expressions) | KPI and measure calculations |
+| Power Query (M) | Data cleaning and transformation |
+
+---
+
+## **📝 Credits**  
+- Inspired by: [YouTube - Power BI Full Project for Data Analysis](https://www.youtube.com/watch?v=8XoDVwWdaqI)  
+- Dataset: [Kaggle Credit Card Financial Dashboard](https://www.kaggle.com/datasets/nibeditasahu/credit-card-financial-dashboard-using-power-bi)  
+- Developed by: [Shradha Pol](https://www.linkedin.com/in/shradhapolofficial)  
+
+---
+
+## **🤝 Contact**  
+👤 **Shradha Pol**  
+- 💼 [LinkedIn](https://www.linkedin.com/in/shradhapolofficial)  
+- 📂 [GitHub](https://github.com/shradha-pol)
