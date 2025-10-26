@@ -27,7 +27,7 @@ This project demonstrates an end-to-end **Power BI dashboard** analyzing **credi
 2. **Data Cleaning & Transformation:** Used **Power Query Editor** to filter, merge, rename, and standardize data. Handled missing values, duplicates, and data type inconsistencies.
 3. **Data Modeling:** Built relationships between fact (`Transaction`) and dimension (`Customer`, `Credit_Card`) tables. Designed a **Star Schema** for optimized analysis.
 4. **DAX Measures:** Key metrics:
-\`\`\`text
+\`\`\`
 Total Revenue = SUM(Transaction[Revenue])
 Average Transaction Value = DIVIDE([Total Revenue], [Transaction Count])
 Monthly Growth = ([ThisMonth] - [LastMonth]) / [LastMonth]
