@@ -129,6 +129,11 @@ Monthly Growth = (ThisMonth - LastMonth) / LastMonth
 
 ---
 
+## **📜 License**  
+This project is licensed under the **MIT License** — feel free to explore, learn, and reuse with credit.  
+
+---
+
 ## **🤝 Contact**  
 👤 **Shradha Pol**  
 - 💼 [LinkedIn](https://www.linkedin.com/in/shradhapolofficial)  
