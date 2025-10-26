@@ -73,7 +73,6 @@ Each table was connected using **Customer ID** as a key field to build a **Star 
   
  |
 
-> 💡 *Tip: Place your actual Power BI screenshots in a folder named `images/` inside the repo and rename them to match the above image names.*
 
 ---
 
