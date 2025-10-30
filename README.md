@@ -69,12 +69,6 @@ Monthly Growth = ([ThisMonth] - [LastMonth]) / [LastMonth]
 | Complex KPI calculations | Step-by-step DAX measures for accuracy |
 | Visual clarity | Consistent color scheme, labeling, and slicers |
 
-## 🔮 Future Enhancements
-- Real-time data integration via Power BI Service
-- Predictive analytics: customer churn & fraud detection
-- Automated email reporting with Power Automate
-- Multi-bank credit card dataset expansion
-
 ## 🧰 Tools & Technologies
 | Tool / Technology | Purpose |
 |------------------|---------|
