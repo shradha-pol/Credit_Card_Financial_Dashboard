@@ -19,9 +19,6 @@ This project demonstrates an end-to-end **Power BI dashboard** analyzing **credi
 | `Credit_Card` | Card type, limits, status, category | 
 | `Transaction` | Transaction ID, amount, payment mode, date | 
 
-> All datasets are anonymized and used for **educational purposes**.  
-**Dataset Source:** [Kaggle Credit Card Financial Dashboard](https://www.kaggle.com/datasets/nibeditasahu/credit-card-financial-dashboard-using-power-bi)
-
 ## 🧭 Workflow
 1. **Data Source & Connection:** Imported datasets from SQL and CSV files. Connected Power BI to a relational database for efficient querying.
 2. **Data Cleaning & Transformation:** Used **Power Query Editor** to filter, merge, rename, and standardize data. Handled missing values, duplicates, and data type inconsistencies.
